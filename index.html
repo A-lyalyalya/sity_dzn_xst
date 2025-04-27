@@ -30,11 +30,14 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
 
-    .title {
+    .logo {
       text-align: center;
-      font-size: 5vw;
       margin-top: 10px;
-      line-height: 1.2;
+    }
+
+    .logo img {
+      width: 80%;
+      cursor: pointer;
     }
 
     .video {
@@ -76,9 +79,6 @@
     }
 
     @media (min-width: 768px) {
-      .title {
-        font-size: 24px;
-      }
       .buttons a {
         font-size: 16px;
       }
@@ -88,7 +88,9 @@
 </head>
 <body>
   <div class="phone">
-    <div class="title">The City<br>Which Doesn't<br>Exist</div>
+    <div class="logo">
+      <img id="logoImage" src="images/band_image1.png" alt="Logo">
+    </div>
     <div class="video">
       <iframe src="https://www.youtube.com/embed/45VRXnv2ByM" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -97,6 +99,18 @@
       <a href="#">View the City</a>
     </div>
   </div>
+
+  <script>
+    const logo = document.getElementById('logoImage');
+    const image1 = '/mnt/data/ChatGPT Image 27 апр. 2025 г., 21_05_36.png';
+    const image2 = 'images/band_image2.png';
+    let toggle = false;
+
+    logo.addEventListener('click', () => {
+      toggle = !toggle;
+      logo.src = toggle ? image2 : image1;
+    });
+  </script>
 </body>
 </html>
 
