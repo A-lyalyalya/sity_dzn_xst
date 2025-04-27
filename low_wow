@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
     body {
       margin: 0;
       padding: 0;
-      background: url('https://www.transparenttextures.com/patterns/white-leather.png'); /* Белая кожа */
-      font-family: 'Patrick Hand', cursive; /* Рукописный стиль */
+      background: #fff url('https://www.transparenttextures.com/patterns/dot-grid.png'); /* Тетрадный фон с точками */
+      font-family: 'Coral Pixels', cursive; /* Новый шрифт */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -31,7 +31,7 @@
 
     .title {
       text-align: center;
-      font-size: 24px;
+      font-size: 28px;
       margin-top: 20px;
     }
 
@@ -42,16 +42,6 @@
       align-items: center;
     }
 
-    .video button {
-      width: 80px;
-      height: 80px;
-      border: 2px solid black;
-      background: none;
-      border-radius: 10px;
-      font-size: 32px;
-      cursor: pointer;
-    }
-
     .buttons {
       display: flex;
       justify-content: space-around;
@@ -60,28 +50,30 @@
 
     .buttons a {
       text-decoration: none;
-      border: 2px solid #000;
+      border: 2px solid #4169e1;
       padding: 10px 15px;
       border-radius: 10px;
-      color: #000;
+      color: #4169e1;
       transition: background 0.3s;
+      font-weight: bold;
     }
 
     .buttons a:hover {
-      background: #ddd;
+      background: #4169e1;
+      color: #fff;
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="phone">
-    <div class="title">Город,<br>которого<br>нет</div>
+    <div class="title">The City<br>Which Doesn't<br>Exist</div>
     <div class="video">
-      <button>&#9658;</button>
+      <iframe width="250" height="150" src="https://www.youtube.com/embed/45VRXnv2ByM" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="buttons">
-      <a href="#">Stay cincept</a>
-      <a href="#">View the Sity</a>
+      <a href="#">Stay concept</a>
+      <a href="#">View the City</a>
     </div>
   </div>
 </body>
