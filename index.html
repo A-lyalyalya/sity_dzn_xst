@@ -102,15 +102,16 @@
 
   <script>
     const logo = document.getElementById('logoImage');
-    const image1 = '/mnt/data/ChatGPT Image 27 апр. 2025 г., 21_05_36.png';
+    const image1 = 'images/band_image1.png';
     const image2 = 'images/band_image2.png';
     let toggle = false;
 
-    logo.addEventListener('click', () => {
-      toggle = !toggle;
-      logo.src = toggle ? image2 : image1;
-    });
+    setInterval(() => {
+  toggle = !toggle;
+  logo.src = toggle ? image2 : image1;
+}, 10000);
   </script>
 </body>
 </html>
+
 
